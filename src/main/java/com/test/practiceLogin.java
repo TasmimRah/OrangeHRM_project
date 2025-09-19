@@ -3,6 +3,7 @@ package com.test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 
 import com.pagefactory.MasterPagefactory;
 import com.util.BaseConfig;
@@ -36,6 +37,7 @@ public class practiceLogin {
 			System.out.println("login failed"); 
 		}
 		Screenshot.getScreenShot(driver, "Homepage_SS");
+		
 		driver.quit();
 		
 		
